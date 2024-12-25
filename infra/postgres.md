@@ -12,3 +12,5 @@ grant all privileges on database mellow_v1 to mellow;
 #
 https://gist.github.com/axelbdt/74898d80ceee51b69a16b575345e8457
 #
+createuser -e -l -P wombat // batabat
+#
