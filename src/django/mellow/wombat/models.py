@@ -12,4 +12,3 @@ class Personality(models.Model):
 
     def __str__(self):
         return f"{self.id} {self.crate_id} {self.crate_location} {self.crate_name}"
-

@@ -1,0 +1,35 @@
+wombat crate run modes
+"bare mode" single crate w/collectors writing directly to AWS (no wombat)
+"crate mode" single crate w/dedicated wombat (reads from collectors, forwards to AWS)
+"grand mode" wombat for all crates (reads from AWS)
+
+VHF = 30 to 300 MHz
+UHF = 300 to 3 GHz
+
+tasking (service?):
+1090 MHz ADSB collection (aviation)
+978 MHz UAT collection (aviation)
+VHF voice collection (aviation)
+AIS collection (marine)
+VHF voice collection (marine)
+NOAA weather radio collection (broadcast, public safety?)
+Commercial FM (broadcast)
+VHF voice collection (Family Radio Service)
+VHF voice collection (business)
+VHF voice collection (amatuer)
+VHF voice collection (military)
+VHF voice collection (public safety)
+802.11 WiFi Access Point collection (ISM)
+Pagers?
+Mobile Data?
+Trunking?
+
+How to classify services?
+
+A=Aviation(ADSB, Voice)
+B=Commercial Broadcast
+F=Federal (?)
+I=ISM (802.11, ?)
+L=Law Enforcement (Data, Voice)
+M=Marine(AIS, Voice)
+ =Military(Data, Voice)

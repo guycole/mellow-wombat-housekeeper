@@ -1,0 +1,12 @@
+--
+-- Title: company.psql
+-- Description: define corporate accounts
+-- 
+create table company (
+  id            bigserial    primary key,
+  created_at    timestamptz  not null default CURRENT_TIMESTAMP,
+  modified_at   timestamptz  not null default CURRENT_TIMESTAMP
+);
+
+grant select, insert, update on company to turtle_go;
+grant usage, select on sequence company_id_seq to turtle_go;
